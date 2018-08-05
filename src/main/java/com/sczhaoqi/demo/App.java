@@ -2,7 +2,8 @@ package com.sczhaoqi.demo;
 
 import com.google.inject.Guice;
 
-public class App {
+public class App
+{
     /**
      * bootstrap
      * parse command line
@@ -11,8 +12,11 @@ public class App {
      *
      * @param args
      */
-    public static void main(String[] args) {
-        MyApplet mainApplet = Guice.createInjector(new MainModule()).getInstance(MyApplet.class);
+    public static void main(String[] args)
+    {
+        MyApplet mainApplet = Guice
+                .createInjector(new MainModule())
+                .getInstance(MyApplet.class);
         mainApplet.run();
     }
 }

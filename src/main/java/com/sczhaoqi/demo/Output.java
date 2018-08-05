@@ -7,5 +7,6 @@ import java.lang.annotation.RetentionPolicy;
 
 @Retention(RetentionPolicy.RUNTIME)
 @BindingAnnotation
-public @interface Output {
+public @interface Output
+{
 }

@@ -1,5 +1,6 @@
 package com.sczhaoqi.demo.helloworlddemo;
 
-public interface MyDestination {
+public interface MyDestination
+{
     void write(String string);
 }

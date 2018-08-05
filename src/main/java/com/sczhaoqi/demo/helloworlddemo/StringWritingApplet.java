@@ -6,23 +6,28 @@ import com.sczhaoqi.demo.Output;
 
 import javax.inject.Inject;
 
-public class StringWritingApplet implements MyApplet {
+public class StringWritingApplet
+        implements MyApplet
+{
 
     private MyDestination destination;
     private Provider<String> stringProvider;
 
     @Inject
-    public StringWritingApplet(MyDestination destination, @Output Provider<String> stringProvider) {
+    public StringWritingApplet(MyDestination destination, @Output Provider<String> stringProvider)
+    {
         super();
         this.destination = destination;
         this.stringProvider = stringProvider;
     }
 
-    private void printHelloWorld() {
+    private void printHelloWorld()
+    {
         destination.write(stringProvider.get());
     }
 
-    public void run() {
+    public void run()
+    {
         printHelloWorld();
     }
 }

@@ -8,10 +8,13 @@ import com.sczhaoqi.demo.helloworlddemo.StringWritingApplet;
 
 import java.io.PrintStream;
 
-public class MainModule extends AbstractModule {
+public class MainModule
+        extends AbstractModule
+{
 
     @Override
-    protected void configure() {
+    protected void configure()
+    {
         install(new HelloWorldModule());
     }
 //    @Provides
